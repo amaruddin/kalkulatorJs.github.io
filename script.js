@@ -24,7 +24,6 @@ numbers.forEach((number) => {
     number.addEventListener("click", (event) => {
         angka = event.target.value;
         inputNumber(angka);
-        console.log(currentNumber);
         updateScreen(currentNumber);
     })
 });
@@ -42,7 +41,6 @@ const inputOperator = (operator) => {
 operators.forEach((operator) => {
     operator.addEventListener("click", (event) => {
         inputOperator(event.target.value);
-        console.log(onScreen);
         updateScreen(onScreen);
     })
 });
@@ -74,7 +72,6 @@ const equalSign = document.querySelector('.equal-sign');
 
 equalSign.addEventListener('click', (event) => {
     calculate();
-    console.log(currentNumber);
     updateScreen(currentNumber);
 });
 
